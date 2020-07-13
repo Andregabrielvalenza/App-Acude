@@ -34,29 +34,26 @@ ion-header
             box-shadow: none;
             padding: 0px 20px;
             margin-bottom: 40px;
-            /*ion-select::before
+            ion-select::before
             {
-                content: "\f0d7";
+                content: url('/assets/img/Grupo1907.png');
                 position: absolute;
                 right: 0;
-                color: red;
-                top: 0;
+                top: 13px;
                 z-index: 99999;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                border:1px solid blue;
-            }*/
+            }
             ion-select
             {
                 color: #ffffff;
                 font-family: PoppinsSemiBold;
-                position: relative
+                position: relative;
+                padding-left: 0px;
+                padding-right: 20px;
             }
-            /*ion-select::part(icon) 
+            ion-select::part(icon) 
             {
                 display: none !important;
-            }*/
+            }
         }
     }
 }

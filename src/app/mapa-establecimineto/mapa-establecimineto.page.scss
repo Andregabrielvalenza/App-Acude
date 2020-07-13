@@ -56,11 +56,26 @@ ion-header
                     margin-right: 5px;
                 }
             }
+            ion-select::before
+            {
+                content: url('/assets/img/Grupo1907.png');
+                position: absolute;
+                right: 0;
+                top: 23px;
+                z-index: 99999;
+            }
             ion-select
             {
                 color: #ffffff;
                 font-family: PoppinsSemiBold;
+                position: relative;
+                padding-left: 0px;
+                padding-right: 20px;
                 
+            }
+            ion-select::part(icon) 
+            {
+                display: none !important;
             }
         }
     }
