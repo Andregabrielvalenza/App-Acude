@@ -1,0 +1,457 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+ion-header
+{
+    height: 0px;
+    ion-toolbar
+    {
+        --background: #23cec3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 200px;
+        border-radius: 0px 0px 34px 35px;
+        position: relative;
+        --padding-top: 30px;
+        img
+        {
+            width: 50%;
+            margin: 0px 25%;
+            opacity: 45%;
+        }
+        .div_iconos_blancos
+        {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            z-index: 99999;
+            width: 100%;
+            top: 35px;
+            padding: 0px 20px;
+            ion-icon
+            {
+                color: #ffffff;
+                z-index: 999999;
+                font-size: 25px;
+            }
+        }
+    }
+}
+ion-content
+{
+    --background: #F5F5F5;
+    --padding-top: 80px;
+}
+.card_iguales
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 9px 38px #00000029;
+    padding:20px 20px;
+    z-index: 99999;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.div_verde
+{
+    background-color: #23CEC3;
+    width: 100%;
+    color: #ffffff;
+    font-family: PoppinsSemiBold;
+    border-radius: 19px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.div_circulo
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    position: absolute;
+    z-index: 999999;
+    top: -25px;
+    left: 130px;
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.p_iconos
+{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    font-family: PoppinsRegular;
+    color: #898A8F;
+    margin-right: 8px;
+}
+.col_flex
+{
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ion-icon.icon_camra_cora
+{
+    color: #2E5169;
+    font-size: 20px;
+}
+.icon_rigth
+{
+    margin-right: 8px;
+}
+.titulo_p
+{
+    color: #313450;
+    font-family: PoppinsSemiBold;
+    margin-bottom: 0px;
+}
+.subtitulo_p
+{
+    color: #898A8F;
+    font-family: PoppinsRegular;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.p_años
+{
+    color: #898A8F;
+    font-family: PoppinsRegular;
+    font-size: 11px;
+    margin: 0px;
+    .span_number
+    {
+        color: #313450;
+    }
+}
+.p_medium
+{
+    color: #313450;
+    font-family: PoppinsMedium;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.descripcion_p_regular
+{
+    font-family: PoppinsRegular;
+    color: #898A8F;
+    margin: 0px;
+    font-size: 13px;
+}
+.a_leer_link
+{
+    float: right;
+    color: #313450;
+    font-family: PoppinsRegular;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 9px;
+}
+.item_list
+{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    --padding-start: 10px;
+    --inner-padding-end: 0px;
+    .label_list
+    {
+        color: #898A8F;
+        font-family: PoppinsRegular;
+        margin: 0px;
+        font-size: 12px;
+        margin-left: 10px;
+
+    }
+    ion-icon
+    {
+        color: #B0B3D0;
+    }
+}
+.card_acordion
+{
+    box-shadow: none;
+    margin: 5px 0px;
+    ion-card-header
+    {
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        padding: 10px;
+        ion-card-subtitle
+        {
+            color: #313450;
+            font-family: PoppinsRegular;
+            position: relative;
+            padding-right: 20px;
+            height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex;
+            margin-bottom: 0;
+            font-size: 12px;
+            .icon_verde
+            {
+                margin-right: 5px;
+            }
+            .icon_close
+            {
+                color: #898A8F;
+                float: right;
+                font-size: 20px;
+                margin-top: 5px;
+                position: absolute;
+                right: 0;
+                top: -5px;
+            }
+        }
+    }
+    ion-card-content
+    {
+        padding: 0px 0px;
+       .div_conuslta_nutton
+       {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-left: 10px;
+           border-bottom: 1px solid #898A8F;
+           height: 55px;
+           p
+           {
+               color: #898A8F;
+               font-family: PoppinsRegular;
+               font-size: 12px;
+               span
+               {
+                   color: #313450;
+               }
+           }
+           ion-button
+           {
+                --background: #ffffff;
+                --border-color: #2E5269;
+                --border-radius: 20px;
+                --border-style: solid;
+                --border-width: 1px;
+                --color: #2E5269;
+                margin: 0px;
+                font-size: 12px;
+                font-family: PoppinsSemiBold;
+                height: 25px;
+                text-transform: none;
+           }
+       } 
+    }
+}
+.div_border_bootom
+{
+    border-bottom: 1px solid #898A8F;
+    padding: 10px 0px;
+}
+.p_dias
+{
+    color: #898A8F;
+    font-family: PoppinsRegular;
+    font-size: 11px;;
+}
+.p_horas
+{
+    color: #898A8F;
+    font-family: PoppinsRegular;
+    font-size: 10px;
+}
+.p_direccion
+{
+    color: #898A8F;
+    font-family: PoppinsRegular;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    ion-icon
+    {
+        color: #5ACFC3;
+        margin-right: 5px;
+    }
+}
+.div_mapa
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    img
+    {
+        margin-top: 10px;
+        width: 100%;
+        height: 110px;
+        border-radius: 15px;
+    }
+}
+.div_border_top
+{
+    border-top: 1px solid #F2F2F2;
+    padding: 15px 15px;
+    
+    .p_subtitulo_regular
+    {
+        color: #313450;
+        font-family: PoppinsRegular;
+        margin: 0px;
+        font-size: 13px;
+    }
+    .a_link_comentarios
+    {
+        color: #3A58FC;
+        text-align: right;
+        font-family: PoppinsSemiBold;
+        margin-top: 5px;
+        margin-bottom: 0px
+    }
+}
+.linea_rigt
+{
+    width: 1px;
+    height: 100%;
+    background-color: #B5B5B5;
+    margin-left: 20px;
+}
+@media (min-width: 375px)
+{
+    .div_circulo
+    {
+        left: 155px;
+    }
+}
+@media (min-width: 411px)
+{
+    .div_circulo
+    {
+        left: 155px;
+    }
+    ion-icon.icon_camra_cora
+    {
+        font-size: 27px;
+    }
+    .div_verde
+    {
+        font-size: 11px;
+    }
+}
+@media (min-width: 414px)
+{
+    .div_circulo
+    {
+        left: 157px;
+    }
+}
+@media (min-width: 480px)
+{
+    .p_iconos
+    {
+        margin-right: 15px;
+    }
+    .div_circulo
+    {
+        left: 188px;
+    }
+    .p_años
+    {
+        font-size: 13px;
+    }
+    .card_acordion
+    {
+        ion-card-content
+        {
+            .div_conuslta_nutton
+            {
+                p
+                {
+                    font-size: 13px;
+                }
+            }
+        }
+    } 
+    .p_dias
+    {
+        font-size: 13px;
+    }
+    .p_horas
+    {
+        font-size: 13px;
+    }
+    .div_verde
+    {
+        font-size: 13px;
+    }
+    .ion-icon.icon_camra_cora
+    {
+        font-size: 30px;
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-top: 118px;
+    }
+    .div_circulo
+    {
+        left: 177px;
+    }
+    ion-header
+    {
+        ion-toolbar
+        {
+            .div_iconos_blancos
+            {
+                padding: 0px 50px;
+                ion-icon
+                {
+                    font-size: 40px;
+                }
+            }
+        }
+    } 
+    ion-icon.icon_camra_cora
+    {
+        font-size: 30px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .div_circulo
+    {
+        left: 235px;
+        width: 130px;
+        height: 130px;
+        top: -52px;
+    }
+    .p_iconos
+    {
+        font-size: 20px;
+    }
+    ion-icon.icon_camra_cora
+    {
+        font-size: 40px;
+    }
+    .col_flex
+    {
+        justify-content: flex-end;
+    }
+}

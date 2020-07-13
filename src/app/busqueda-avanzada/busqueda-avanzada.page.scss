@@ -1,0 +1,219 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+@font-face{
+    font-family: PoppinsExtraBold;
+    src : url('/assets/font/Poppins-ExtraBold.otf')
+}
+ion-content
+{
+    --padding-top: 30px;
+    --padding-bottom: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --background: #000000bf;
+    ion-icon
+    {
+        float: right;
+        color: #ffffff;
+        font-size: 30px;
+    }
+    ion-card
+    {
+        --background: #ffffff;
+        border-radius: 13px;
+        padding: 20px;
+        width: 100%;
+        margin: 0px;
+        margin-top: 45px;
+        h5
+        {
+            color: #898A8F;
+            font-family: PoppinsSemiBold;
+            margin: 0px;
+            margin-bottom: 15px;
+        }
+        .h5_bottom
+        {
+            margin-top: 20px;
+            border-bottom: 1px solid #CBCBCB;
+            padding-bottom: 20px;
+        }
+        ion-select
+        {
+            --placeholder-color: #898A8F;
+            --placeholder-opacity: 1;
+            color: #898A8F;
+            font-family: PoppinsRegular;
+            border: 1px solid #CBCBCB;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            --padding-end: 20px;
+        }
+        .card_acordion
+        {
+            margin: 0px;
+            --background: #ffffff;
+            box-shadow: none;
+            padding: 0px;
+            border-bottom: 1px solid #CBCBCB;
+            border-radius: 0px;
+            margin-bottom: 20px;
+            ion-card-header
+            {
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                position: relative;
+                ion-card-subtitle
+                {
+                    color: #898A8F;
+                    font-family: PoppinsRegular;
+                    padding-right: 15px;
+                    .icon_rigth
+                    {
+                        float: right;
+                        color: #000000;
+                        font-size: 14px;
+                        position: absolute;
+                        right: 0;
+                        top: 4px;
+                        z-index: 99999;
+                    }
+                }
+            }
+            ion-card-content
+            {
+                padding-left: 0px;
+                padding-right: 0px;
+                .div_flex_check
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .check_label
+                    {
+                        width: 33.3%;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        ion-label
+                        {
+                            margin-left: 5px;
+                            color: #898A8F;
+                            font-family: PoppinsRegular;
+                            font-size: 12px;
+                        }
+                        ion-checkbox
+                        {
+                            --background: #CDD3D9;
+                            --background-checked: #CDD3D9;
+                            --border-color: #CDD3D9;
+                            --border-color-checked: #CDD3D9;
+                            --border-radius: 3px;
+                            --border-style: solid;
+                            --border-width: 1px;
+                            --checkmark-color:#898A8F;
+                        }
+                    }
+                }
+            }
+            .conten_none
+            {
+                display: none;
+            }
+        }
+        ion-button
+        {
+            --background: #2E5269;
+            --border-radius: 28px;
+            width: 100%;
+            text-transform: none;
+            height: 55px;
+            --color: #ffffff;
+        }
+        ion-button:hover
+        {
+            --background: #ffffff;
+            --color: #2E5269;
+            border: 1px solid #2E5269;
+            border-radius: 28px;
+        }
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-start: 100px;
+        --padding-end: 100px;
+        ion-icon
+        {
+            font-size: 50px;
+        }
+        ion-card
+        {
+            margin-top: 70px;
+            padding: 40px;
+            .card_acordion
+            {
+                ion-card-content
+                {
+                    .div_flex_check
+                    {
+                        .check_label
+                        {
+                            ion-label
+                            {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px)
+{
+    ion-content
+    {
+        --padding-start: 150px;
+        --padding-end: 150px;
+        --padding-top: 50px;
+        --padding-bottom: 50px;
+        ion-icon
+        {
+            font-size: 70px;
+        }
+        ion-card
+        {
+            margin-top: 100px;
+            padding: 70px;
+            .card_acordion
+            {
+                ion-card-content
+                {
+                    .div_flex_check
+                    {
+                        .check_label
+                        {
+                            ion-label
+                            {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

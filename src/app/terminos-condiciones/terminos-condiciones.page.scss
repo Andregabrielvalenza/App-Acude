@@ -1,0 +1,192 @@
+@font-face{
+    font-family: MontserratSemiBold;
+    src : url('/assets/font/Montserrat-SemiBold.ttf')
+}
+@font-face{
+    font-family: MontserratExtraBold;
+    src : url('/assets/font/Montserrat-ExtraBold.ttf')
+}
+@font-face{
+    font-family: MontserratRegular;
+    src : url('/assets/font/Montserrat-Regular.ttf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+ion-header
+{
+    height: 0px;
+    ion-toolbar
+    {
+        --background: #23cec3;
+        --color: #ffffff;
+        --padding-start: 0px;
+        --padding-end:0px;
+        text-align: left;
+        border-radius: 0px 0px 35px 34px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-family: MontserratSemiBold;
+    }
+}
+ion-content
+{
+    --padding-top: 90px;
+}
+h1
+{
+    font-family: MontserratSemiBold;
+    color: #2E5269;
+    font-size: 16px;
+}
+p.p1
+{
+    font-family: MontserratRegular;
+    color: #2E5269;
+    font-size: 14px;
+}
+p.p2
+{
+    font-family: MontserratRegular;
+    color: #4400DE;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+ion-card
+{
+    box-shadow: none;
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px;
+    .div_numeros
+    {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #CDD3D9;
+        color: #ffffff;
+        border-radius: 50%;
+        opacity: 26%;
+        font-size: 25px;
+        font-family: PoppinsMedium;
+    }
+    .pcard
+    {
+        color: #313450;
+        font-family: PoppinsMedium;
+        margin: 0px 0px;
+        font-size: 14px;
+        margin-left: -8px;
+    }
+}
+.div_botones
+{
+    margin-top: 287px;
+}
+.btn_enlace
+{
+    --background: #ffffff;
+    --border-color:#2E5269;
+    --border-radius: 28px;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: #2E5269;
+    text-transform: none;
+    font-family: MontserratSemiBold;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    position: relative;
+}
+.btn_enlace:hover::after
+{
+    content: 'Siguinte';
+    font-family: MontserratSemiBold;
+    background: #2E5269;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(min-width: 411px)
+{
+    p.p2
+    {
+        margin-bottom: 50px;
+    }
+    .div_botones
+    {
+        margin-top: 357px;
+    }
+    .btn_enlace
+    {
+        height: 60px;
+    }
+}
+@media(min-width: 480px)
+{
+    
+    .div_botones
+    {
+        margin-top: 460px;
+    }
+}
+@media(min-width: 640px)
+{
+    .div_botones
+    {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .btn_enlace
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-top: 325px;
+    }
+    .div_botones
+    {
+        margin-top: 100px;
+    }
+    .btn_enlace
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+}
+@media (min-width: 1024px)
+{
+    .btn_enlace
+    {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 70px;
+    }
+    ion-content
+    {
+        --padding-top: 480px;
+    }
+    
+}

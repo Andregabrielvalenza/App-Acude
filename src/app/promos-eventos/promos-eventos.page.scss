@@ -1,0 +1,199 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+ion-header
+{
+    height: 0px;
+    ion-toolbar
+    {
+        --background: #23cec3;
+        --color: #ffffff;
+        --padding-start: 0px;
+        --padding-end:0px;
+        text-align: center;
+        border-radius: 0px 0px 35px 35px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        font-family: MontserratSemiBold;
+        position: relative;
+        ion-card.card_check
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0px 15px;
+            margin-bottom: 00px;
+            margin-top: 0px;
+            p
+            {
+                color: #ffffff;
+                font-family: PoppinsSemiBold;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                margin: 0px;
+                ion-icon.icon_close
+                {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+            ion-select
+            {
+                color: #ffffff;
+                font-family: PoppinsSemiBold;
+                
+            }
+        }
+    }
+    ion-slides
+    {
+        position: absolute;
+        width: 100%;
+        top: 65px;
+        z-index: 99999;
+        height: 40px;
+        box-shadow: none;
+        padding-left: 20px;
+        ion-slide
+        {
+            ion-card
+            {
+                width: 100%;
+                margin: 0px;
+                border-radius: 30px;
+                padding: 6px 0px;
+                p
+                {
+                    margin: 0px;
+                    color: #313450;
+                    font-family: PoppinsRegular;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+ion-content
+{
+    --padding-top: 110px;
+    --background: #F5F5F5;
+}
+.card_list
+{
+    margin: 0px;
+    display: flex;
+    --background: transparent;
+    box-shadow: none;
+    flex-wrap: wrap;
+    ion-avatar
+    {
+        width: 120px;
+        --border-radius:8px;
+        height: 170px;
+    }
+    .div_descrip
+    {
+        margin-left: 10px;
+        width: 180px;
+        .p_titulo
+        {
+            font-family: PoppinsMedium;
+            color: #313450;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .p_descrip
+        {
+            font-family: PoppinsRegular;
+            color: #898A8F;
+            text-align: start;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 75px;
+            line-height: 1.3;
+        }
+    }
+}
+.bajar_card
+{
+    margin-top: 10px;
+}
+@media (min-width: 411px)
+{
+    .card_list
+    {
+        .div_descrip
+        {
+            width: 227px;
+        }
+    }
+}
+@media (min-width: 480px)
+{
+    .card_list
+    {
+        ion-avatar
+        {
+            width: 150px;
+            height:205px ;
+        }
+        .div_descrip
+        {
+            width: 260px;
+        }
+    }
+}
+@media (min-width: 768px)
+{
+    .card_list
+    {
+        ion-avatar
+        {
+            width: 120px;
+            height:170px ;
+        }
+        .div_descrip
+        {
+            width: 189px;
+        }
+    }
+    .col_padding_eft
+    {
+        padding: 0px 50px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .card_list
+    {
+        ion-avatar
+        {
+            width: 135px;
+            height: 175px;
+        }
+        .div_descrip
+        {
+            width: 255px;
+        }
+    }
+    .col_padding_eft
+    {
+        padding: 20px 80px;
+    }
+}

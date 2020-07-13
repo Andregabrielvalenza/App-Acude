@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-card class="card_check">
+      <p><ion-icon name="close-outline" class="icon_close"></ion-icon>Encuentra tu profesional</p>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss" mode="ios">
+        <ion-select-option value="brown">Lima</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ion-toolbar>
+  <ion-card class="card_buscador">
+    <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="11" size-sm="10" size-md="8" style="padding-left: 0px;padding-right: 0px;">
+        <ion-slides pager="false" [options]="slideOptsOne">
+          <ion-slide class="slider_p">
+            <p class="activo">Todos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Odontologos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Aftologos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Especialidaologos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Todos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Odontologos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Aftologos</p>
+          </ion-slide>
+          <ion-slide class="slider_p">
+            <p>Especialidaologos</p>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="card_mapa">
+    <p>Oftalmologs en tu zona</p>
+    <img src="assets/img/4590781ec12ff6bdb0f06cef6a96764b.png">
+    <p class="ion-text-end">Ver lista ></p>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,131 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+ion-content
+{
+    --background: #000000b5;
+}
+ion-tabs
+{
+    ion-tab-bar
+    {
+        box-shadow: 0px -4px 63px #00000012;
+        border-radius: 18px 18px 0px 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 80px;
+        ion-tab-button
+        {
+            height: 70px;
+            .label_cuenta
+            {
+                font-family: PoppinsRegular;
+                color: #898A8F;
+                font-size: 14px;
+            }
+            .icon_close
+            {
+                color: #23CEC3;
+            }
+        }
+    }
+}
+ion-card
+{
+    margin: 0px;
+    margin-top: 71px;
+    --background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -3px 29px #3C3C3C57;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    img
+    {
+        width: 50%;
+        margin-left: 25%;
+    }
+    ion-list
+    {
+        margin-top: 10px;
+        ion-item
+        {
+            --padding-start: 0px;
+            --inner-padding-end: 10px;
+            --inner-padding-start: 10px;
+            ion-label
+            {
+                color: #313450;
+                font-family: PoppinsRegular;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+@media (min-width: 375px)
+{
+    ion-card
+    {
+        margin-top: 90px;
+    }
+}
+@media (min-width: 411px)
+{
+    ion-card
+    {
+        margin-top: 145px;
+    }
+}
+@media (min-width: 411px)
+{
+    ion-card
+    {
+        margin-top: 160px;
+    }
+}
+@media (min-width: 480px)
+{
+    ion-card
+    {
+        margin-top: 230px;
+    }
+    ion-tabs
+    {
+        ion-tab-bar
+        {
+            height: 100px;
+        }
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-start: 60px;
+        --padding-end: 60px;
+    }
+    ion-card
+    {
+        margin-top: 395px;
+        padding-bottom: 80px;
+    }
+}
+@media (min-width: 1024px)
+{
+    ion-card
+    {
+        margin-top: 675px;
+    }
+}

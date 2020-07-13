@@ -1,0 +1,79 @@
+<ion-header style="position: relative;">
+  <ion-toolbar>
+    <ion-card class="card_check">
+      <p><ion-icon name="arrow-back-outline" class="icon_close"></ion-icon>Regresar</p>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss" mode="ios">
+        <ion-select-option value="brown">Lima</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ion-toolbar>
+  <ion-slides pager="false" [options]="slideOptsOne">
+    <ion-slide>
+      <ion-card>
+        <p>Clinicas</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <p>Hospitales</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <p>Consultorios</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <p>Postas</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <p>Clinicas</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <p>Clinicas</p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" size-md="6">
+        <h1 class="ion-text-center">Este es el titulo de una promoción</h1>
+          <ion-slides pager="false" [options]="slideOpts" class="slider_img">
+            <ion-slide>
+              <ion-avatar>
+                <img src="assets/img/7d22daaa44d82e23ac2c17d846df0a85.png">
+              </ion-avatar>
+            </ion-slide>
+            <ion-slide>
+              <ion-avatar>
+                <img src="assets/img/7d22daaa44d82e23ac2c17d846df0a85.png">
+              </ion-avatar>
+            </ion-slide>
+            <ion-slide>
+              <ion-avatar>
+                <img src="assets/img/7d22daaa44d82e23ac2c17d846df0a85.png">
+              </ion-avatar>
+            </ion-slide>
+          </ion-slides>
+          <p class="p_descrip">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, qui…
+          </p>
+          <div class="div_botones">
+            <ion-button class="btn_mas">Mas información</ion-button>
+            <ion-button class="btn_telefono"><img src="assets/img/Grupo1716.png">Contactar</ion-button>
+          </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-card class="card_check">
+      <img src="assets/img/Grupo1695.png">
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss" mode="ios">
+        <ion-select-option value="brown">Lima</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ion-toolbar>
+  <ion-card class="card_buscador">
+    <ion-input mode="ios" placeholder="Que deseas buscar?"></ion-input>
+    <ion-icon name="chevron-down-outline"></ion-icon>
+    <!--<div class="div_tabla">
+      <ion-list>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>-->
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-right: 0px;padding-left: 0px;">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" size-md="9" class="ion-text-end ion-no-padding">
+        <p class="p_busqueda">Búsqueda avanzada</p>
+      </ion-col>
+      <ion-col size="12" size-md="9" size-lg="8">
+        <ion-card class="card_acordion">
+          <ion-card-header mode="ios">
+            <img src="assets/img/Trazado1594.png">
+            <ion-card-title>Profesionales de la salud</ion-card-title>
+            <ion-icon name="chevron-forward-outline" class="icon_rigth"></ion-icon>
+          </ion-card-header>
+          <ion-card-content class="card_content_none1">
+            <ion-list>
+              <ion-item>
+                <ion-label>Medico</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Tecnologos medicos</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Obstetras</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Nutricionistas</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Odontologos</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-md="9" size-lg="8">
+        <ion-card class="card_acordion">
+          <ion-card-header mode="ios">
+            <img src="assets/img/OjPimX.tif.png">
+            <ion-card-title>Ver establecimientos</ion-card-title>
+            <ion-icon name="chevron-forward-outline" class="icon_rigth"></ion-icon>
+          </ion-card-header>
+          <ion-card-content class="card_content_none2">
+            <ion-list>
+              <ion-item>
+                <ion-label>Hospitales</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Clinicas privadas</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Farmacias</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Laboratorios</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Ver todos</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-md="9" size-lg="8">
+        <ion-card class="card_acordion">
+          <ion-card-header mode="ios">
+            <img src="assets/img/Grupo1905.png">
+            <ion-card-title>Promociones y eventos</ion-card-title>
+            <ion-icon name="chevron-forward-outline" class="icon_rigth"></ion-icon>
+          </ion-card-header>
+          <ion-card-content class="card_content_none3 ion-no-padding">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-slides pager="false" [options]="slideOptsOne">
+    <ion-slide>
+      <img src="assets/img/7d22daaa44d82e23ac2c17d846df0a85.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/7d22daaa44d82e23ac2c17d846df0a85.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/281214ab81ec2472fca83e21e292de45.png">
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule">
+      <img src="assets/img/Grupo1699.png">
+      <ion-label class="label_semibol">Emergencia</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <img src="assets/img/Grupo1716.png">
+      <ion-label class="label_regular">Telemedicina</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="map">
+      <img src="assets/img/Grupo1873.png">
+      <ion-label class="label_regular">Mis favoritos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about">
+      <img src="assets/img/user-4.png">
+      <ion-label class="label_regular">Mi cuenta</ion-label>
+    </ion-tab-button>
+    <div class="div_plomo"></div>
+  </ion-tab-bar>
+</ion-tabs>

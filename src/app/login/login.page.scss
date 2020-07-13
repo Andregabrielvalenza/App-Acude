@@ -1,0 +1,332 @@
+@font-face{
+    font-family: MontserratSemiBold;
+    src : url('/assets/font/Montserrat-SemiBold.ttf')
+}
+@font-face{
+    font-family: MontserratExtraBold;
+    src : url('/assets/font/Montserrat-ExtraBold.ttf')
+}
+@font-face{
+    font-family: MontserratRegular;
+    src : url('/assets/font/Montserrat-Regular.ttf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+ion-header
+{
+    height: 275px;
+    ion-toolbar
+    {
+        --background: #23cec3;
+        --color: #ffffff;
+        --padding-start: 0px;
+        --padding-end:0px;
+        text-align: left;
+        border-radius: 0px 0px 35px 34px;
+        height: 305px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-family: MontserratSemiBold;
+        box-shadow: 0px 5px 22px #00000029;
+        ion-card
+        {
+            width: 70%;
+            margin: 0px 15%;
+            --background: #23cec3;
+            box-shadow: none;
+            img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p
+        {
+            font-family: MontserratRegular;
+            color: #ffffff;
+            margin-top: 100px;
+        }
+    }
+}
+.div_botones
+{
+    margin-top: 60px;
+}
+.btn_enlace
+{
+    --background: #ffffff;
+    --border-color:#ECECEC;
+    --border-radius: 28px;
+    --border-style: solid;
+    --border-width: 1px;
+    --box-shadow: 0px 2px 5px #0000000D;
+    text-transform: none;
+    font-family: MontserratSemiBold;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 45px;
+    position: relative;
+}
+.btn_correo
+{
+    --color:#3F4079;
+    margin-bottom: 15px;
+}
+.btn_facebbok
+{
+    --color:#3082CC;
+    margin-bottom: 15px;
+}
+.btn_google
+{
+    --color: #FF6B6B;
+    margin-bottom: 15px;
+}
+.btn_correo:hover::after
+{
+    content: 'Correo';
+    font-family: MontserratSemiBold;
+    background: #3F4079;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_facebbok:hover::after
+{
+    content: 'Facebook';
+    font-family: MontserratSemiBold;
+    background: #3082CC;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_google:hover::after
+{
+    content: 'Google';
+    font-family: MontserratSemiBold;
+    background: #FF6B6B;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_linea_plomo
+{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #F0F0F3;
+    border-radius: 3px;
+    height: 5px;
+    margin-bottom: 30px;
+}
+div.div_check
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    --padding-start: 0px;
+    --inner-padding-end:0px;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    ion-label
+    {
+        font-size: 11px;
+        margin-left: 10px;
+        color: #898A8F;
+        font-family: PoppinsRegular;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    ion-checkbox
+    {
+        --border-radius: 6px;
+        --background: #CDD3D9;
+        --border-color: #CDD3D9;
+        --border-style: solid;
+        --border-width: 1px;
+        --background-checked:#ffffff;
+        --border-color-checked: #CDD3D9;
+        --size: 23px;
+        --checkmark-width: 1px;
+        --checkmark-color: #23CEC3;
+    }
+}
+@media(min-width: 411px)
+{
+    .div_botones
+    {
+        margin-top: 60px;
+    }
+    .btn_enlace
+    {
+        height: 60px;
+    }
+    ion-header
+    {
+        height: 328px;
+        ion-toolbar
+        {
+            height: 355px;
+        }
+    }
+    div.div_check
+    {
+        ion-label
+        {
+            font-size: 13px;
+        }
+    }
+}
+@media(min-width: 480px)
+{
+    ion-header
+    {
+        height: 440px;
+        ion-toolbar
+        {
+            height: 465px;
+        }
+    }
+    
+    .div_botones
+    {
+        margin-top: 60px;
+    }
+    div.div_check
+    {
+        ion-label
+        {
+            font-size: 16px;
+        }
+    }
+}
+@media(min-width: 640px)
+{
+    .div_botones
+    {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .btn_enlace
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (min-width: 768px)
+{
+    .div_botones
+    {
+        margin-top: 100px;
+    }
+    .btn_enlace
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    ion-header
+    {
+        height: 440px;
+        ion-toolbar
+        {
+            height: 465px;
+            ion-card
+            {
+                width: 50%;
+                margin: 0px 25%;
+            }
+            p
+            {
+                margin-top: 150px;
+            }
+        }
+    }
+    .div_linea_plomo
+    {
+        width: 25%;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+    }
+    div.div_check
+    {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%; 
+        margin-top: 25px;
+        ion-label
+        {
+            font-size: 18px;
+        }
+    }
+}
+@media (min-width: 1024px)
+{
+    .btn_enlace
+    {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 70px;
+    }
+    .div_linea_plomo
+    {
+        margin-bottom: 60px;
+    }
+    .btn_correo
+    {
+        margin-bottom: 50px;
+    }
+    .btn_facebbok
+    {
+        margin-bottom: 50px;
+    }
+    .btn_google
+    {
+        margin-bottom: 50px;
+    }
+    div.div_check
+    {
+        width: 55%;
+        margin-left: 22.5%;
+        margin-right: 22.5%; 
+        ion-label
+        {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        ion-checkbox
+        {
+            --size: 40px;
+        }
+    }
+}

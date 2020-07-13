@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-card class="card_check">
+      <p><ion-icon name="close-outline" class="icon_close"></ion-icon>Especialidad</p>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss" mode="ios">
+        <ion-select-option value="brown">Lima</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ion-toolbar>
+  <ion-card class="card_buscador">
+    <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="6" size-sm="4" size-md="3" style="display: flex; align-items: center;justify-content: flex-end;">
+        <p class="p_busqueda">Resultados en radio de</p>
+      </ion-col>
+      <ion-col size="4" size-sm="2" size-md="2" class="col_button">
+        <ion-button class="ion-no-padding"><ion-icon name="remove-outline"></ion-icon></ion-button>
+        <p class="p_km">1 km</p>
+        <ion-button class="ion-no-padding"><ion-icon name="add-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="card_mapa">
+    <p>Oftalmologs en tu zona</p>
+    <img src="assets/img/4590781ec12ff6bdb0f06cef6a96764b.png">
+    <p class="ion-text-end">Ver lista ></p>
+  </ion-card>
+</ion-content>

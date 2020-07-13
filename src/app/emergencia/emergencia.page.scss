@@ -1,0 +1,154 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+@font-face{
+    font-family: MontserratSemiBold;
+    src : url('/assets/font/Montserrat-SemiBold.ttf')
+}
+ion-content
+{
+    --background: #000000bf;
+    --padding-top: 30px;
+    --padding-bottom: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    .icon_close
+    {
+        color: #ffffff;
+        float: right;
+        font-size: 30px;
+    }
+    ion-card
+    {
+        --background: #ffffff ;
+        margin: 0px;
+        box-shadow: none;
+        border-radius: 13px;
+        width: 100%;
+        padding: 20px;
+        margin-top: 45px;
+        h4
+        {
+            color: #23CEC3;
+            font-family: PoppinsSemiBold;
+            margin: 0px;
+            margin-top: 30px;
+        }
+        .p_confirme
+        {
+            font-family: PoppinsMedium;
+            color: #313450;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+        .div_p_editar
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #CDD3D9;
+            padding: 15px 10px;    
+            .p_telefono
+            {
+                color: #898A8F;
+                font-family: PoppinsRegular;
+                margin: 0px;
+                span
+                {
+                    font-family: PoppinsSemiBold;
+                }
+            }
+            .p_editar
+            {
+                color: #002BFF;
+                font-family: PoppinsRegular;
+                margin: 0px;
+            }
+            img
+            {
+                width: 100%;
+                height: 200px;
+                margin-top: 10px;
+            }
+        }
+        .btn_deseo
+        {
+            --background: #2E5269;
+            --color: #ffffff;
+            font-family: MontserratSemiBold;
+            text-transform: none;
+            width: 100%;
+            height: 55px;
+            --border-radius: 28px;
+            margin-top: 30px;
+        }
+        .btn_llamar
+        {
+            --background: #23CEC3;
+            --color: #ffffff;
+            font-family: MontserratSemiBold;
+            text-transform: none;
+            width: 100%;
+            height: 55px;
+            --border-radius: 28px;
+            margin-top: 10px;
+        }
+        .btn_deseo:hover
+        {
+            --background: #ffffff;
+            --color: #2E5269;
+            border: 1px solid #2E5269;
+            border-radius: 28px;
+        }
+        .btn_llamar:hover
+        {
+            --background: #ffffff;
+            --color: #23CEC3;
+            border: 1px solid #23CEC3;
+            border-radius: 28px;
+        }
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-start: 100px;
+        --padding-end: 100px;
+        --padding-top: 100px;
+        .icon_close
+        {
+            font-size: 45px;
+        }
+        ion-card
+        {
+            margin-top: 60px;
+        }
+    }
+}
+@media (min-width: 1024px)
+{
+    ion-content
+    {
+        --padding-start: 150px;
+        --padding-end: 150px;
+        --padding-top: 150px;
+        .icon_close
+        {
+            font-size: 60px;
+        }
+        ion-card
+        {
+            margin-top: 100px;
+        }
+    }
+}

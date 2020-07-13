@@ -1,0 +1,368 @@
+@font-face{
+    font-family: MontserratBold;
+    src : url('/assets/font/Montserrat-Bold.ttf')
+}
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+ion-header
+{
+    height: 0px;
+    ion-toolbar
+    {
+        --background: url('/assets/img/Grupo1906.png') 0 0/100% 100% no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 230px;
+        border-radius: 0px 0px 34px 35px;
+        position: relative;
+        --padding-top: 30px;
+        ion-card
+        {
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            --background: transparent;
+            box-shadow: none;
+            padding: 0px 20px;
+            .ion_blanco
+            {
+                color: #ffffff;
+                font-size: 25px;
+            }
+            ion-title
+            {
+                color: #ffffff;
+                font-family: MontserratBold;
+                font-size: 18px;
+            }
+            .icon_compartir
+            {
+                float: right;
+            }
+        }
+    }
+}
+ion-content
+{
+    --background: #F5F5F5;
+    --padding-top: 175px;
+}
+.card_clinica
+{
+    border-radius: 20px;
+    box-shadow: none;
+    margin: 0px;
+    z-index: 999999;
+    padding: 20px;
+    --background: #ffffff;
+    .div_flex
+    {
+        display: flex;
+        justify-content: space-between;
+        .div_flex1
+        {
+            width: 70%;
+            h5
+            {
+                color: #313450;
+                font-family: PoppinsSemiBold;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            p
+            {
+                color: #898A8F;
+                font-family: PoppinsRegular;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                img
+                {
+                    margin-right: 5px;
+                }
+            }
+            .div_estrllas
+            {
+                display: flex;
+                img.img_estrellas
+                {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .div_flex2
+        {
+            width: 30%;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            img
+            {
+                margin-left: 20px;
+            }
+            .icon_corazon
+            {
+                font-size: 20px;
+                color: #2E5269;
+                margin-left: 12px;
+            }
+        }
+    }
+    .div_img_flex
+    {
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        ion-avatar
+        {
+            width: 65px;
+            height: 65px;
+            position: relative;
+            --border-radius: 10px;
+            img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .ion_avatar_left
+        {
+            margin-left: 13px;
+        }
+        ion-avatar.avatar_before::after
+        {
+            content: "+7";
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            background-image: linear-gradient(to right top, #6065e5, #575cc9, #4f52ae, #474993, #3f4079);
+            opacity: 70%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: PoppinsRegular;
+        }
+    }
+    .div_top_bottom
+    {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        padding: 0px 10px;
+        height: 50px;
+        margin: 20px 0px;
+        .p_atendido
+        {
+            color: #3A58FC;
+            font-family: PoppinsMedium;
+            margin: 0px;
+        }
+        .p_hora
+        {
+            color: #313450;
+            font-family: PoppinsRegular;
+            margin: 0px;
+            margin-left: 20px;
+        }
+    }
+    .div_top_bootom_border
+    {
+        border-bottom: 1px solid #ECECEC;
+        .p_ubicacion_icon
+        {
+            color: #898A8F;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            font-family: PoppinsRegular;
+            margin-top: 0px;
+            ion-icon
+            {
+                color:#5ACFC3;
+                margin-right: 5px;
+            }
+        }
+        .img_mapa
+        {
+            width: 100%;
+            height: 110px;
+            margin-bottom: 20px;
+        }
+    }
+    .p_atendido
+    {
+        color: #3A58FC;
+        font-family: PoppinsMedium;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    ion-select
+    {
+        background-color: #F2F2F2;
+        width: 100%;
+        color: #313450;
+        --placeholder-color: #313450;
+        font-family: PoppinsRegular;
+        border-radius: 10px;
+        --padding-end: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .div_perfil_nombres
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .ion_avatar_circular
+        {
+            width: 50px;
+            height: 50px;
+            --border-radius:50%;
+            .img_circular
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        div
+        {
+            margin-left: 15px;
+            width: 235px;
+            .p_titulo
+            {
+                color: #313450;
+                font-family: PoppinsRegular;
+                margin: 0px;
+            }
+            .p_subtitulo
+            {
+                color: #898A8F;
+                font-family: PoppinsRegular;
+                margin: 0px;
+            }
+        }
+    }
+    .div_estrella_boton
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .p_esterlla_number
+        {
+            margin: 0px;
+            margin-left: 5px;
+        }
+        .btn_reserva
+        {
+            --background: #ffffff;
+            --border-color: #2E5269;
+            --border-radius: 20px;
+            --border-style: solid;
+            --border-width: 0.5px;
+            --color: #2E5269;
+            font-family: PoppinsSemiBold;
+            font-size: 13px;
+            height: 30px;
+            margin: 0px;
+            text-transform: none;
+        }
+        .btn_reserva:hover
+        {
+            --background: #2E5269;
+            --color: #ffffff;
+        }
+    }
+    .linea_plomo
+    {
+        width: 100%;
+        height: 1px;
+        background-color: #ECECEC;
+        margin: 20px 0px;
+    }
+}
+@media (min-width: 480px)
+{
+    .card_clinica
+    {
+        .div_img_flex
+        {
+            ion-avatar
+            {
+                width: 90px;
+                height: 90px;
+            }
+            .ion_avatar_left
+            {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 768px)
+{
+    .card_clinica
+    {
+        .div_img_flex
+        {
+            .ion_avatar_left
+            {
+                margin-left: 10px;
+            }
+        }
+    }
+    ion-header
+    {
+        ion-toolbar
+        {
+            ion-card
+            {
+                display: block;
+                padding: 0px 50px;
+                .ion_blanco
+                {
+                    color: #ffffff;
+                    font-size: 35px;
+                }
+                .icon_compartir
+                {
+                    float: right;
+                }
+                ion-title
+                {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px)
+{
+    .card_clinica
+    {
+        .div_img_flex
+        {
+            justify-content: center;
+        }
+    }
+}

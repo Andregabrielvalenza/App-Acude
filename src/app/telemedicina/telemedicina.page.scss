@@ -1,0 +1,268 @@
+@font-face{
+    font-family: MontserratSemiBold;
+    src : url('/assets/font/Montserrat-SemiBold.ttf')
+}
+@font-face{
+    font-family: MontserratExtraBold;
+    src : url('/assets/font/Montserrat-ExtraBold.ttf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+@font-face{
+    font-family: MontserratBold;
+    src : url('/assets/font/Montserrat-Bold.ttf')
+}
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+ion-header
+{
+    height: 0px;
+    ion-toolbar
+    {
+        --background: #ffffff;
+        --color: #23CEC3;
+        --padding-start: 35px;
+        --padding-end:35px;
+        text-align: left;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-family: MontserratBold;
+        position: relative;
+        ion-icon
+        {
+            color: #23CEC3;
+            position: absolute;
+            z-index: 99999;
+            left: 10px;
+            top: 18px;
+            font-size: 20px;
+        }
+    }
+}
+ion-content
+{
+    --padding-top: 50px;
+}
+h5
+{
+    font-family: PoppinsSemiBold;
+    color: #898A8F;
+}
+.p_descripcion
+{
+    font-family: PoppinsRegular;
+    color: #898A8F;
+    line-height: 1.4;
+    font-size: 13px;
+}
+.card_acordion
+{
+    margin: 0px;
+    box-shadow: none;
+    ion-card-header
+    {
+        background-color: #23CEC3;
+        border-radius: 10px;
+        padding-left: 30px;
+        ion-card-title
+        {
+            color: #ffffff;
+            font-family: PoppinsMedium;
+            font-size: 15px;
+            position: relative;
+            .icon_title
+            {
+                position: absolute;
+                color: #ffffff;
+                z-index: 99999;
+                right: 10px;
+                top: 0px;
+                font-size: 18px;
+            }
+        }
+    }
+    ion-card-content
+    {
+        padding: 0px 0px;
+      .div_plan
+      {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #E2E2E2;
+          padding: 0px 10px;
+          margin-top: 20px;
+          .p_plan
+          {
+              color: #07345C;
+              font-family: PoppinsSemiBold;
+              display: flex;
+              align-items: center;
+              img
+              {
+                  margin-right: 10px;
+              }
+          }
+          .p_anual
+          {
+              color: #898A8F;
+              font-family: PoppinsSemiBold;
+          }
+      }  
+      .p_medium_titulos
+      {
+          color: #898A8F;
+          font-family: PoppinsMedium;
+          font-size: 11px;
+      }
+      .p_list
+      {
+        color: #898A8F;
+        font-family: PoppinsRegular;
+        font-size: 11px;
+      }
+      .top_bajar
+      {
+          margin-top: 10px;
+      }
+      .btn_comprar
+      {
+        --background: #ffffff;
+        --border-color: #2E5269;
+        --border-radius: 20px;
+        --border-style: solid;
+        --border-width: 1px;
+        --box-shadow: none;
+        --color: #2E5269;
+        font-family: PoppinsSemiBold;
+        font-size: 11px;
+        text-transform: none;
+        width: 30%;
+        height: 30px;
+      }
+      .btn_comprar:hover
+      {
+        --background: #2E5269;
+        --color: #ffffff;
+      }
+      .p_descripcion_terminos
+      {
+          padding: 10px 20px;
+          color: #898A8F;
+          font-family: PoppinsRegular;
+          font-size: 13px;
+      }
+    }
+    .conten_desactivo
+    {
+        display: block;
+    }
+}
+.img_acude
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.div_linea_p
+{
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .div_linea
+    {
+        width: 30px;
+        height: 1px;
+        background-color: #707070;
+    }
+    .p_convenio
+    {
+        color: #000000;
+        font-family: PoppinsSemiBold;
+        margin: 0px 20px;
+        font-size: 13px;
+    }
+}
+.btn_login
+{
+    width: 70%;
+    margin-left: 15%;
+    --color:#898A8F;
+    --background: #ffffff;
+    --border-color: #707070;
+    --border-radius: 26px;
+    --border-style: solid;
+    --border-width: 1px;
+    text-transform: none;
+    height: 55px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.btn_login:hover
+{
+    --color:#ffffff;
+    --background: #707070;
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-top: 100px;
+    }
+    .img_acude
+    {
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 30px;
+    }
+    .div_linea_p
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 30px;
+        .div_linea
+        {
+            width: 50px;
+            height: 1px;
+            background-color: #707070;
+        }
+        .p_convenio
+        {
+            color: #000000;
+            font-family: PoppinsSemiBold;
+            margin: 0px 20px;
+            font-size: 15px;
+        }
+    }
+    .btn_login
+    {
+        width: 50%;
+        margin-left: 25%;
+        height: 70px;
+    }
+    ion-header
+    {
+        ion-toolbar
+        {
+            --padding-start: 80px;
+            --padding-end:80px;
+            ion-icon
+            {
+                left: 35px;
+                top: 10px;
+            }
+        }
+    }
+}

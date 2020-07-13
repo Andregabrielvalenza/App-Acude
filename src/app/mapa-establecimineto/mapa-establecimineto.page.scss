@@ -1,0 +1,249 @@
+@font-face{
+    font-family: PoppinsSemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+@font-face{
+    font-family: PoppinsRegular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: PoppinsMedium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+@font-face{
+    font-family: PoppinsExtraBold;
+    src : url('/assets/font/Poppins-ExtraBold.otf')
+}
+@font-face{
+    font-family: PoppinsBlack;
+    src : url('/assets/font/Poppins-Black.otf')
+}
+ion-header
+{
+    height: 0px;
+    position: relative;
+    ion-toolbar
+    {
+        --background: #23cec3;
+        --color: #ffffff;
+        --padding-start: 0px;
+        --padding-end:0px;
+        text-align: center;
+        border-radius: 0px 0px 35px 35px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        font-family: MontserratSemiBold;
+        position: relative;
+        ion-card.card_check
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0px 15px;
+            margin-bottom: 40px;
+            p
+            {
+                color: #ffffff;
+                font-family: PoppinsSemiBold;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                ion-icon.icon_close
+                {
+                    font-size: 30px;
+                    margin-right: 5px;
+                }
+            }
+            ion-select
+            {
+                color: #ffffff;
+                font-family: PoppinsSemiBold;
+                
+            }
+        }
+    }
+    ion-card.card_buscador
+    {
+        position: absolute;
+        top: 60px;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        padding: 2px 1px;
+        z-index: 99999;
+        margin: 0px;
+        box-shadow: 0px 12px 24px #0000001A;
+        ion-searchbar
+        {
+            font-family: PoppinsRegular;
+            --color: #C7C7C7;
+            --placeholder-color: #C7C7C7;
+            padding: 0px;
+            width: 100%;
+            --box-shadow:none;
+            --icon-color: #C7C7C7;
+            --background: #ffffff;
+        }
+    }
+}
+ion-content
+{
+    --padding-top: 110px;
+    --background: #F5F5F5;
+}
+.div_tabs
+{
+    display: flex;
+    flex-wrap: wrap;
+    .p_desactivo
+    {
+        color: #23CEC3;
+        font-family: PoppinsRegular;
+        font-size: 11px;
+        margin-right: 13px;
+    }
+    .p_activo
+    {
+        color: #23CEC3;
+        font-family: PoppinsBlack;
+        font-size: 11px;
+        margin-right: 13px;
+    }
+}
+ion-card.card_mapa
+{
+    border-radius: 20px;
+    height: 86%;
+    margin: 0px;
+    padding: 10px 20px;
+    p
+    {
+        color: #313450;
+        font-family: PoppinsSemiBold;
+        margin-right: 6px;
+    }
+    img
+    {
+        width: 100%;
+        height: 75%;
+    }
+}
+ion-slides
+{
+    margin: 8px 0px;
+    .slider_p
+    {
+        p
+        {
+            width: 100%;
+            text-align: center;
+            color: #23CEC3;
+            font-family: PoppinsRegular;
+            font-size: 11px;
+        } 
+        .activo
+        {
+            font-family: PoppinsBlack !important;
+        }
+    }
+}
+@media (min-width: 411px)
+{
+    ion-content
+    {
+        --padding-top: 110px;
+    }
+    ion-card.card_mapa
+    {
+        height: 88%;
+        img
+        {
+            height: 80%;
+        }
+    }
+    .div_tabs
+    {
+        .p_desactivo
+        {
+            font-size: 13px;
+        }
+        .p_activo
+        {
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 414px)
+{
+    ion-content
+    {
+        --padding-top: 115px;
+    }
+}
+@media (min-width: 480px)
+{
+    ion-content
+    {
+        --padding-top: 120px;
+    }
+    ion-card.card_mapa
+    {
+        height: 90%;
+        img
+        {
+            height: 85%;
+        }
+    }
+    .div_tabs
+    {
+        .p_desactivo
+        {
+            font-size: 15px;
+            margin-right: 17px;
+        }
+        .p_activo
+        {
+            font-size: 15px;
+            margin-right: 17px;
+        }
+    }
+}
+@media (min-width: 640px)
+{
+    ion-content
+    {
+        --padding-top: 115px;
+    }
+    .div_tabs
+    {
+        justify-content: center;
+    }
+}
+@media (min-width: 768px)
+{
+    ion-content
+    {
+        --padding-top: 135px;
+    }
+    ion-header
+    {
+        ion-card.card_buscador
+        {
+            top: 60px;
+            left: 10%;
+            width: 80%;
+            padding: 2px 20px;
+        }
+    }
+    ion-card.card_mapa
+    {
+        padding: 20px 50px;
+    }
+}    
+@media (min-width: 1024px)
+{
+}

@@ -1,0 +1,138 @@
+@font-face{
+  font-family: MyanmarSangambold;
+  src : url('/assets/font/Myanmar Sangam MN.ttc')
+}
+@font-face{
+  font-family: MontserratBold;
+  src : url('/assets/font/Montserrat-Bold.ttf')
+}
+@font-face{
+  font-family: MontserratMedium;
+  src : url('/assets/font/Montserrat-Medium.ttf')
+}
+ion-slides
+{
+  height: 68%;;
+  --bullet-background: #cdd3d9;
+  --bullet-background-active: #2e5269;
+}
+.swiper-pagination-bullet
+{
+  background: var(--bullet-background);
+}
+ion-slide
+{
+  ion-card
+  {
+    box-shadow: none;
+    border-radius: 0px;
+    ion-card-content
+    {
+      color: #2E5269;
+      font-family: MontserratMedium;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+.btn_siguinete
+{
+  width: 100%;
+  --background: #ffffff;
+  --color: #2e5269;
+  --border-color: #cdd3d9;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 30px;
+  --box-shadow: none;
+  text-transform: capitalize;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: MontserratMedium;
+  font-weight: bold;
+}
+.btn_siguinete:hover
+{
+  --background: #2e5269;
+  --color: #ffffff;
+}
+.div_plomo
+{
+  width: 100%;
+  height: 4px;
+  background-color: #F0F0F3;
+}
+.btn_saltar
+{
+  width: 100%;
+  --background: #ffffff;
+  --color: #23CEC3;
+  --border-color: #cdd3d9;
+  --box-shadow: none;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-family: MontserratMedium;
+  font-weight: bold;
+}
+@media (min-width: 411px)
+{
+  ion-slides
+  {
+    height: 60%;
+  }
+  .btn_siguinete
+  {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .btn_saltar
+  {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 640px)
+{
+  ion-slides
+  {
+    height: 120%;
+  }
+  .btn_siguinete
+  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .btn_saltar
+  {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px)
+{
+  ion-slides
+  {
+    height: 50%;
+  }
+  .btn_siguinete
+  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .btn_saltar
+  {
+    margin-top: 30px;
+  }
+  ion-content
+  {
+    --padding-top: 24%;
+  }
+}
+@media (min-width: 1300px)
+{
+  ion-content
+  {
+    --padding-top: 11%;
+  }
+}
